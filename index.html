@@ -25,6 +25,27 @@
             padding: 0 20px;
         }
 
+        /* Logo styles */
+        .logo-container {
+            text-align: center;
+            padding: 2rem 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-image {
+            max-width: 200px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            animation: logoFloat 3s ease-in-out infinite;
+        }
+
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
         /* Floating particles animation */
         .particle {
             position: absolute;
@@ -402,6 +423,10 @@
                 width: 100%;
                 height: 120px;
             }
+
+            .logo-image {
+                max-width: 150px;
+            }
         }
 
         /* Scroll animations */
@@ -459,6 +484,11 @@
         <div class="loading-spinner"></div>
     </div>
 
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <img src="https://i.postimg.cc/SXKH8PdK/logo.png" alt="उमंग पेशेंट केयर सर्विसेज लोगो" class="logo-image">
+    </div>
+
     <!-- Floating Particles -->
     <div class="particle" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
     <div class="particle" style="top: 20%; left: 80%; animation-delay: 1s;"></div>
@@ -496,34 +526,31 @@
             <div class="services-grid">
                 <div class="service-card animate-on-scroll">
                     <div class="service-icon">
-                        <img id="service-img-1" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNjY3ZWVhIiByeD0iMTUiLz4KPHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeD0iNTAiIHk9IjUwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IndoaXRlIj4KICA8cGF0aCBkPSJNNi42MiAxMC43OWMxLjQ0IDIuODMgMy43NiA1LjE0IDYuNTkgNi41OWwyLjItMi4yYy4yNy0uMjcuNjctLjM2IDEuMDItLjI0bDMuMjcgMS4yOGMuNjEuMjQgMS4wMS44NSAxLjAxIDEuNTNWMjJjMCAuNTUtLjQ1IDEtMSAxSDIwVjJoMWMuNTUgMCAxIC40NSAxIDF2NS4wM2MwIC42OC0uNDIgMS4yOS0xLjAxIDEuNTNsLTMuMjcgMS4yOGMtLjM1LjEyLS43NS4wMy0xLjAyLS4yNGwtMi4yLTIuMnoiLz4KICA8L3N2Zz4KPC9zdmc+" alt="फोन कॉल">
+                        <img src="https://i.postimg.cc/5j7kVjNX/Baccha.jpg" alt="नवजात शिशु मालिश">
                     </div>
-                    <h3>24/7 सपोर्ट</h3>
-                    <p>आपातकालीन स्थिति में 24 घंटे उपलब्ध सेवा। तुरंत संपर्क करें और तत्काल सहायता प्राप्त करें।</p>
+                    <h3>नवजात शिशु मालिश</h3>
+                    <p>पारंपरिक तकनीकों से नवजात शिशु की कोमल मालिश। बच्चे के स्वस्थ विकास के लिए।</p>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <div class="service-icon">
-                        <img id="service-img-2" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjNzY0YmEyIiByeD0iMTUiLz4KPHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeD0iNTAiIHk9IjUwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IndoaXRlIj4KICA8cGF0aCBkPSJNMTYgNGMwLTEuMTEuODktMiAyLTJzMiAuODkgMiAyLS44OSAyLTIgMnptNCA5VjloLTZ2NGgtNFY5SDJ2NGgtMnYyaDJ2NGg0di00aDZ2NGg0di00aDJ2LTJoLTJ6Ii8+CiAgPC9zdmc+Cjwvc3ZnPg==" alt="पारिवारिक देखभाल">
+                        <img src="https://i.postimg.cc/pp3Gm7jx/Contact-Elder.jpg" alt="बुजुर्गों की देखभाल">
                     </div>
-                    <h3>पारिवारिक देखभाल</h3>
-                    <p>परिवार के सदस्यों की संपूर्ण देखभाल। अनुभवी कर्मचारी और व्यक्तिगत सेवा।</p>
+                    <h3>बुजुर्गों की देखभाल</h3>
+                    <p>अनुभवी कर्मचारी और व्यक्तिगत सेवा के साथ बुजुर्गों की संपूर्ण देखभाल।</p>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <div class="service-icon">
-                        <img id="service-img-3" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjA5M2ZiIiByeD0iMTUiLz4KPHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeD0iNTAiIHk9IjUwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IndoaXRlIj4KICA8cGF0aCBkPSJNMTIgMmwtMy4wOSA2LjI2TDIgOS4yN2w1IDQuODdMNS4xOCAyMiAxMiAxOC4yNyAxOC44MiAyMiAxNyAxNC4xNGw1LTQuODctNi45MS0xLjAxTDEyIDJ6Ii8+CiAgPC9zdmc+Cjwvc3ZnPg==" alt="होम केयर नर्सिंग">
+                        <img src="https://i.postimg.cc/nX7dBkKm/elder-2.webp" alt="होम केयर नर्सिंग">
                     </div>
                     <h3>होम केयर नर्सिंग</h3>
                     <p>घर पर पेशेवर नर्सिंग सेवा। मरीज़ की दवा, भोजन और दैनिक देखभाल।</p>
                 </div>
                 <div class="service-card animate-on-scroll">
                     <div class="service-icon">
-                        <img id="service-img-4" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIiBmaWxsPSIjZjU1NzZjIiByeD0iMTUiLz4KPHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeD0iNTAiIHk9IjUwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9IndoaXRlIj4KICA8cGF0aCBkPSJNMTIgMmMtNC45NyAwLTkgNC4wMy05IDlzNC4wMyA5IDkgOSA5LTQuMDMgOS05LTQuMDMtOS05LTl6bTQgMTFoLTN2M2gtMnYtM0g4di0yaDN2LTNoMnYzaDN2MnoiLz4KICA8L3N2Zz4KPC9zdmc+" alt="नवजात शिशु मालिश">
+                        <img src="https://i.postimg.cc/Z9SwcdjM/Elder-3.png" alt="24/7 सपोर्ट">
                     </div>
-                    <h3>नवजात शिशु मालिश</h3>
-                    <p>पारंपरिक तकनीकों से नवजात शिशु की कोमल मालिश। बच्चे के स्वस्थ विकास के लिए।</p>
-                </div>
-            </div></h3>
-                    <p>पारंपरिक तकनीकों से नवजात शिशु की कोमल मालिश। बच्चे के स्वस्थ विकास के लिए। लेडीज़ मालिश (मां, गर्भवती महिलाएं, डिलीवरी के बाद देखभाल)</p>
+                    <h3>24/7 सपोर्ट</h3>
+                    <p>आपातकालीन स्थिति में 24 घंटे उपलब्ध सेवा। तुरंत संपर्क करें और तत्काल सहायता प्राप्त करें।</p>
                 </div>
             </div>
         </div>
@@ -586,38 +613,6 @@
         // Add scroll event listener
         window.addEventListener('scroll', animateOnScroll);
 
-        // Read and display images
-        async function loadImages() {
-            try {
-                // Load the 4 images
-                const images = [
-                    { element: 'service-img-1', description: 'फोन कॉल' },
-                    { element: 'service-img-2', description: 'पारिवारिक देखभाल' },
-                    { element: 'service-img-3', description: 'होम केयर नर्सिंग' },
-                    { element: 'service-img-4', description: 'नवजात शिशु मालिश' }
-                ];
-
-                // You can replace these with your actual image file paths
-                const imageData = await Promise.all([
-                    window.fs?.readFile?.('image1.png') || null,
-                    window.fs?.readFile?.('image2.jpg') || null,
-                    window.fs?.readFile?.('image3.jpg') || null,
-                    window.fs?.readFile?.('image4.jpg') || null
-                ]);
-
-                imageData.forEach((data, index) => {
-                    const img = document.getElementById(images[index].element);
-                    if (data && img) {
-                        const blob = new Blob([data]);
-                        const url = URL.createObjectURL(blob);
-                        img.src = url;
-                        img.alt = images[index].description;
-                    }
-                });
-            } catch (error) {
-                console.log('Images will load with placeholder data');
-            }
-        }
         function createParticles() {
             for (let i = 0; i < 20; i++) {
                 const particle = document.createElement('div');
