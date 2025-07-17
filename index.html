@@ -1,129 +1,738 @@
 <!DOCTYPE html>
 <html lang="hi">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🌸 उमंग पेशेंट केयर सर्विसेज - नागपुर</title>
-  <meta name="description" content="बच्चों की मालिश, बुजुर्गों की देखभाल और होम केयर सेवाएँ - नागपुर और महाराष्ट्र में उमंग पेशेंट केयर सर्विसेज से संपर्क करें।">
-  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="नागपुर और महाराष्ट्र में बेबी मालिश, पेशेंट केयर, बुज़ुर्गों की देखभाल और होम हेल्थ केयर सेवाएं। अब व्हाट्सएप पर संपर्क करें।">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Hind', sans-serif;
+    :root {
+      --primary-color: #e91e63;
+      --secondary-color: #c2185b;
+      --accent-color: #25D366;
+      --text-color: #333;
+      --light-bg: #fdfbfb;
+      --white: #fff;
+      --shadow: 0 4px 20px rgba(0,0,0,0.1);
+      --gradient-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    * {
       margin: 0;
       padding: 0;
-      background: #fffaf5;
-      color: #333;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Baloo 2', sans-serif;
+      background: var(--light-bg);
+      color: var(--text-color);
       line-height: 1.6;
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: var(--gradient-bg);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="60" r="0.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="40" r="0.5" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+      animation: float 20s ease-in-out infinite;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      animation: slideInUp 1s ease;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+      animation: slideInUp 1s ease 0.2s both;
+      opacity: 0.9;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background: var(--accent-color);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+      animation: slideInUp 1s ease 0.4s both;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    }
+
+    .cta-button:hover {
+      background: #1ebe5d;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+    }
+
+    /* Stats Section */
+    .stats {
+      background: var(--white);
+      padding: 3rem 1rem;
       text-align: center;
     }
 
-    header {
-      background-color: #ffb6c1;
-      color: #fff;
-      padding: 1rem 0;
+    .stats-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.2rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      margin-top: 0;
-    }
-
-    section {
+    .stat-item {
       padding: 2rem;
+      border-radius: 15px;
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      color: white;
+      transition: transform 0.3s ease;
+      animation: fadeInUp 1s ease;
     }
 
-    .services img {
-      width: 300px;
-      height: auto;
-      margin: 1rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    .stat-item:hover {
+      transform: translateY(-5px);
     }
 
-    .whatsapp-float {
+    .stat-number {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      counter-reset: number;
+      animation: countUp 2s ease;
+    }
+
+    .stat-label {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* Services Section */
+    .services-section {
+      padding: 4rem 1rem;
+      background: linear-gradient(45deg, #f0f2f5, #fafbfc);
+    }
+
+    .services-section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: var(--primary-color);
+      animation: fadeIn 1s ease;
+    }
+
+    .services-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      animation: slideInUp 1s ease;
+      position: relative;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .service-content {
+      padding: 1.5rem;
+    }
+
+    .service-content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.8rem;
+      color: var(--primary-color);
+    }
+
+    .service-content p {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .service-features {
+      list-style: none;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-features li {
+      padding: 0.3rem 0;
+      position: relative;
+      padding-left: 1.5rem;
+    }
+
+    .service-features li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--accent-color);
+      font-weight: bold;
+    }
+
+    /* About Section */
+    .about-section {
+      background: var(--white);
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--primary-color);
+      animation: fadeIn 1s ease;
+    }
+
+    .about-text {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      animation: fadeInUp 1s ease 0.2s both;
+    }
+
+    .founder-info {
+      background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-top: 2rem;
+      animation: slideInUp 1s ease 0.4s both;
+    }
+
+    .founder-info h3 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      animation: fadeIn 1s ease;
+    }
+
+    .testimonial-grid {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .testimonial-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 2rem;
+      transition: transform 0.3s ease;
+      animation: fadeInUp 1s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .testimonial-author {
+      font-weight: 600;
+      opacity: 0.9;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      background: var(--white);
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    .contact-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--primary-color);
+      animation: fadeIn 1s ease;
+    }
+
+    .contact-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .contact-item {
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      animation: slideInUp 1s ease;
+    }
+
+    .contact-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-item h3 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--text-color);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* WhatsApp Button */
+    .whatsapp-button {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      background-color: #25D366;
+      background: var(--accent-color);
       color: white;
-      border-radius: 50%;
-      padding: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      text-decoration: none;
       z-index: 1000;
+      transition: all 0.3s ease;
+      animation: pulse 2s infinite;
     }
 
-    .whatsapp-float img {
-      width: 30px;
-      height: 30px;
+    .whatsapp-button:hover {
+      background: #1ebe5d;
+      transform: scale(1.05);
+      box-shadow: 0 6px 30px rgba(37, 211, 102, 0.6);
     }
 
-    footer {
-      background-color: #ffe4e1;
-      padding: 1rem;
-      font-size: 0.9rem;
+    /* Animations */
+    @keyframes slideInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    iframe {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-top: 1rem;
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+
+    @keyframes countUp {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero p {
+        font-size: 1.1rem;
+      }
+      
+      .stats-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .testimonial-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .contact-info {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Scroll animations */
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease;
+    }
+
+    .animate-on-scroll.animated {
+      opacity: 1;
+      transform: translateY(0);
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>🌸 उमंग पेशेंट केयर सर्विसेज</h1>
-    <h2>आपके अपने घर में देखभाल, स्नेह और सेवा</h2>
-  </header>
 
-  <section>
-    <p>नन्हें बच्चों की प्यार से मालिश, बुजुर्गों की गरिमा के साथ सेवा और घर पर समर्पित देखभाल — यही है उमंग का वादा। नागपुर और पूरे महाराष्ट्र में हम अनुभव, करुणा और भरोसे के साथ पेशेंट केयर सेवाएँ प्रदान करते हैं।</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>🌸 उमंग पेशेंट केयर सर्विसेज</h1>
+      <p>माँ और बच्चे की मालिश, बुज़ुर्गों की देखभाल, पेशेंट केयर और घरेलू सेवा – नागपुर और पूरे महाराष्ट्र में</p>
+      <a href="#contact" class="cta-button">अभी संपर्क करें</a>
+    </div>
   </section>
 
-  <section class="services">
-    <img src="https://i.postimg.cc/5j7kVjNX/Baccha.jpg" alt="बच्चे की मालिश">
-    <img src="https://i.postimg.cc/pp3Gm7jx/Contact-Elder.jpg" alt="बुजुर्ग सेवा">
-    <img src="https://i.postimg.cc/nX7dBkKm/elder-2.webp" alt="घर पर देखभाल">
-    <img src="https://i.postimg.cc/Z9SwcdjM/Elder-3.png" alt="वरिष्ठ नागरिक देखभाल">
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="stats-container">
+      <div class="stat-item animate-on-scroll">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">खुश परिवार</div>
+      </div>
+      <div class="stat-item animate-on-scroll">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">साल का अनुभव</div>
+      </div>
+      <div class="stat-item animate-on-scroll">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">सेवा उपलब्ध</div>
+      </div>
+      <div class="stat-item animate-on-scroll">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">संतुष्ट ग्राहक</div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>सेवाएँ:</h2>
-    <ul style="list-style: none; padding: 0;">
-      <li>👶 नवजात शिशु मालिश</li>
-      <li>👵 बुजुर्गों की व्यक्तिगत देखभाल</li>
-      <li>🏡 होम विज़िट नर्सिंग</li>
-      <li>🤱 माँ और बच्चे की देखभाल</li>
-      <li>🛌 पेशेंट बेड-साइड अटेंडेंट</li>
-    </ul>
+  <!-- Services Section -->
+  <section class="services-section">
+    <h2>हमारी सेवाएं</h2>
+    <div class="services-grid">
+      <div class="service-card animate-on-scroll">
+        <img src="https://i.postimg.cc/5j7kVjNX/Baccha.jpg" alt="बच्चे की मालिश सेवा" loading="lazy">
+        <div class="service-content">
+          <h3>बेबी मालिश</h3>
+          <p>अनुभवी दाइयों द्वारा सुरक्षित और पोषणयुक्त बच्चे की मालिश।</p>
+          <ul class="service-features">
+            <li>पारंपरिक तेल मालिश</li>
+            <li>बच्चे के विकास में सहायक</li>
+            <li>अनुभवी और प्रशिक्षित दाइयां</li>
+            <li>घर पर सुविधा</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="service-card animate-on-scroll">
+        <img src="https://i.postimg.cc/pp3Gm7jx/Contact-Elder.jpg" alt="पेशेंट केयर" loading="lazy">
+        <div class="service-content">
+          <h3>पेशेंट केयर</h3>
+          <p>घर पर बीमारों की देखभाल – दयालुता और अनुभव के साथ।</p>
+          <ul class="service-features">
+            <li>24/7 देखभाल उपलब्ध</li>
+            <li>दवाई का समय पर सेवन</li>
+            <li>व्यक्तिगत स्वच्छता</li>
+            <li>डॉक्टर के निर्देशों का पालन</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="service-card animate-on-scroll">
+        <img src="https://i.postimg.cc/nX7dBkKm/elder-2.webp" alt="बुज़ुर्गों की देखभाल" loading="lazy">
+        <div class="service-content">
+          <h3>बुज़ुर्ग सेवा</h3>
+          <p>बुज़ुर्ग माता-पिता के लिए प्यार भरी सेवा और देखभाल।</p>
+          <ul class="service-features">
+            <li>साथी और मानसिक सहारा</li>
+            <li>भोजन और दवाई की व्यवस्था</li>
+            <li>डॉक्टर के पास जाने में सहायता</li>
+            <li>दैनिक गतिविधियों में मदद</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="service-card animate-on-scroll">
+        <img src="https://i.postimg.cc/Z9SwcdjM/Elder-3.png" alt="होम हेल्थ केयर" loading="lazy">
+        <div class="service-content">
+          <h3>होम केयर</h3>
+          <p>घर बैठे हेल्थ केयर सेवाएं, पूरे महाराष्ट्र में उपलब्ध।</p>
+          <ul class="service-features">
+            <li>घरेलू नर्सिंग सेवा</li>
+            <li>फिजियोथेरेपी</li>
+            <li>मेडिकल इक्विपमेंट सपोर्ट</li>
+            <li>स्वास्थ्य निगरानी</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>संपर्क फ़ॉर्म</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLxW_e_Vr9o1Qg-ExampleFormURL/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">लोड हो रहा है…</iframe>
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-content">
+      <h2>हमारे बारे में</h2>
+      <p class="about-text">
+        उमंग पेशेंट केयर सर्विसेज एक समुदायिक सेवा संस्था है जो परिवारों की स्वास्थ्य देखभाल की जरूरतों को पूरा करने के लिए प्रतिबद्ध है। हमारा मिशन हर परिवार तक गुणवत्तापूर्ण और किफायती स्वास्थ्य सेवा पहुंचाना है।
+      </p>
+      <div class="founder-info">
+        <h3>🙏 श्रीमती रेशमा तिवारी</h3>
+        <p>संस्थापक और मुख्य परामर्शदाता</p>
+        <p>5+ वर्षों का अनुभव • समुदायिक सेवा में समर्पित • प्रशिक्षित स्वास्थ्य कार्यकर्ता</p>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>Google Reviews</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m2!1m1!1s0x3bd4c0..." width="100%" height="300" frameborder="0" style="border:0" allowfullscreen="" loading="lazy"></iframe>
-    <!-- Replace the above iframe src with your real Google Reviews embed after GMB registration -->
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>ग्राहकों की राय</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card animate-on-scroll">
+        <p class="testimonial-text">
+          "उमंग की सेवा से मेरे बच्चे का स्वास्थ्य बहुत बेहतर हुआ है। दाई जी बहुत प्यार से मालिश करती है।"
+        </p>
+        <p class="testimonial-author">- प्रिया शर्मा, नागपुर</p>
+      </div>
+      
+      <div class="testimonial-card animate-on-scroll">
+        <p class="testimonial-text">
+          "मेरे पिता जी की देखभाल बहुत अच्छी तरह से हो रही है। स्टाफ बहुत दयालु और अनुभवी है।"
+        </p>
+        <p class="testimonial-author">- राजेश पाटिल, पुणे</p>
+      </div>
+      
+      <div class="testimonial-card animate-on-scroll">
+        <p class="testimonial-text">
+          "24/7 सेवा मिलना बहुत राहत की बात है। रेशमा जी की टीम बहुत विश्वसनीय है।"
+        </p>
+        <p class="testimonial-author">- सुनीता देशमुख, नागपुर</p>
+      </div>
+    </div>
   </section>
 
-  <a href="https://wa.me/918788517752" class="whatsapp-float" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-content">
+      <h2>संपर्क करें</h2>
+      <p>आज ही हमसे जुड़ें और अपने परिवार के लिए बेहतर स्वास्थ्य सेवा का अनुभव करें।</p>
+      
+      <div class="contact-info">
+        <div class="contact-item animate-on-scroll">
+          <h3>📞 फोन</h3>
+          <p>8180072771</p>
+        </div>
+        
+        <div class="contact-item animate-on-scroll">
+          <h3>📲 व्हाट्सएप</h3>
+          <p>8788517752</p>
+        </div>
+        
+        <div class="contact-item animate-on-scroll">
+          <h3>📍 क्षेत्र</h3>
+          <p>नागपुर और पूरे महाराष्ट्र</p>
+        </div>
+        
+        <div class="contact-item animate-on-scroll">
+          <h3>🕒 समय</h3>
+          <p>24/7 उपलब्ध</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>🌸 उमंग पेशेंट केयर सर्विसेज • नागपुर, महाराष्ट्र</p>
+      <p>संपर्क करें: श्रीमती रेशमा तिवारी • 📞 8180072771 | 📲 8788517752</p>
+      <p>© 2025 Umang Patient Care Services. सभी अधिकार सुरक्षित।</p>
+      <p style="margin-top: 1rem; opacity: 0.8;">
+        💝 समुदायिक सेवा के लिए प्रतिबद्ध • परिवारों के साथ, परिवारों के लिए
+      </p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Button -->
+  <a class="whatsapp-button" href="https://wa.me/918788517752" target="_blank" rel="noopener">
+    📲 WhatsApp पर संपर्क करें
   </a>
 
-  <footer>
-    <p>🕊️ Nagpur, Maharashtra • संपर्क करें: Reshma Tiwari • 📞 8180072771 | 📲 WhatsApp: 8788517752</p>
-    <p>© 2025 उमंग पेशेंट केयर सर्विसेज</p>
-  </footer>
-</body>
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
 
+    // Scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animated');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Counter animation for stats
+    const counters = document.querySelectorAll('.stat-number');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = parseInt(counter.textContent.replace(/[^\d]/g, ''));
+          const increment = target / 100;
+          let current = 0;
+          
+          const updateCounter = () => {
+            if (current < target) {
+              current += increment;
+              counter.textContent = Math.floor(current) + (counter.textContent.includes('+') ? '+' : counter.textContent.includes('%') ? '%' : '');
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.textContent = counter.textContent.includes('+') ? target + '+' : 
+                                  counter.textContent.includes('%') ? target + '%' : 
+                                  counter.textContent.includes('/') ? '24/7' : target;
+            }
+          };
+          
+          updateCounter();
+          counterObserver.unobserve(counter);
+        }
+      });
+    }, observerOptions);
+
+    counters.forEach(counter => {
+      counterObserver.observe(counter);
+    });
+
+    // Add loading animation
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '1';
+    });
+  </script>
+
+</body>
 </html>
