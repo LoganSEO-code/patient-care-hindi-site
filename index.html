@@ -3,105 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>माँ और शिशु देखभाल सेवाएँ | होम केयर सर्विस</title>
+  <title>🌸 उमंग पेशेंट केयर सर्विसेज | Nagpur & Maharashtra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * { box-sizing: border-box; }
     body {
-      font-family: 'Noto Sans Devanagari', sans-serif;
-      background: #fffaf0;
-      color: #333;
+      font-family: 'Hind', sans-serif;
       margin: 0;
-      padding: 0;
+      background: #fffdf7;
+      color: #333;
     }
     header {
-      background: #ff7e5f;
-      color: white;
+      background: linear-gradient(to right, #ff9472, #f2709c);
       padding: 30px 20px;
+      color: white;
       text-align: center;
     }
-    h1 {
+    header img {
+      height: 60px;
       margin-bottom: 10px;
     }
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+    }
     nav {
-      background: #ff9671;
+      background: #ffe0c1;
+      padding: 10px 0;
       text-align: center;
-      padding: 10px;
     }
     nav a {
-      color: white;
+      margin: 0 15px;
       text-decoration: none;
-      margin: 0 10px;
+      color: #333;
       font-weight: bold;
     }
     section {
-      padding: 20px;
-      max-width: 800px;
+      max-width: 1000px;
       margin: auto;
-    }
-    .services ul {
-      padding-left: 20px;
-    }
-    .contact {
-      background: #fceabb;
-      padding: 20px;
-      margin-top: 30px;
-      text-align: center;
-      border-radius: 10px;
-    }
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 10px;
-      font-size: 14px;
-      color: #555;
+      padding: 30px 20px;
     }
     h2 {
+      color: #f2709c;
+      border-bottom: 1px solid #f3c2c2;
+      padding-bottom: 5px;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .card {
+      background: #fff7f2;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin: 15px;
       color: #ff6f61;
+    }
+    .card p {
+      margin: 0 15px 15px;
+    }
+    .about, .contact {
+      background: #fff3e6;
+      border-radius: 8px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+    .contact {
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      background: #eee;
+      color: #666;
+      margin-top: 30px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      text-align: center;
+      font-size: 26px;
+      line-height: 55px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+      z-index: 100;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>माँ और शिशु देखभाल सेवाएँ</h1>
-    <p>घर पर सुरक्षित, अनुभवी और विश्वसनीय देखभाल</p>
+    <img src="https://i.imgur.com/1vQ6i4a.png" alt="Logo" />
+    <h1>🌸 <strong>उमंग पेशेंट केयर सर्विसेज</strong></h1>
+    <p>Nagpur और Maharashtra के लिए सुरक्षित, अनुभवी और घर पर देखभाल सेवाएँ</p>
   </header>
 
   <nav>
     <a href="#services">सेवाएँ</a>
     <a href="#about">हमारे बारे में</a>
-    <a href="#contact">संपर्क करें</a>
+    <a href="#contact">संपर्क</a>
   </nav>
 
-  <section id="services" class="services">
+  <section id="services">
     <h2>हमारी सेवाएँ</h2>
-    <ul>
-      <li>🏥 <strong>पेशेंट केयर अटेंडेंट</strong> – बुजुर्गों और मरीजों की घर पर देखभाल</li>
-      <li>👶 <strong>नवजात शिशु की मालिश</strong> – अनुभवी महिलाओं द्वारा सुरक्षित मालिश</li>
-      <li>🤱 <strong>डिलीवरी के बाद माँ की मालिश</strong> – पारंपरिक तरीके से शरीर को आराम व मजबूती देना</li>
-    </ul>
+    <div class="services">
+      <div class="card">
+        <img src="https://i.imgur.com/bcB6q4D.jpg" alt="Patient Care" />
+        <h3>🏥 पेशेंट केयर अटेंडेंट</h3>
+        <p>घर पर बुजुर्गों और मरीजों की देखभाल – अनुभव और सहानुभूति के साथ।</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/rdhGktg.jpg" alt="Baby Massage" />
+        <h3>👶 शिशु की मालिश</h3>
+        <p>कोमल और सुरक्षित तकनीकों से नवजात शिशु की पारंपरिक मालिश।</p>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/M5SHVpq.jpg" alt="Mother Massage" />
+        <h3>🤱 माँ की डिलीवरी बाद देखभाल</h3>
+        <p>डिलीवरी के बाद मालिश, स्टीम थेरेपी और आरामदायक रिकवरी सेवा।</p>
+      </div>
+    </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="about">
     <h2>हमारे बारे में</h2>
-    <p>
-      हम एक समर्पित टीम हैं जो दिल्ली, नोएडा और आसपास के क्षेत्रों में घर पर ही पेशेंट केयर और मालिश सेवाएँ प्रदान करते हैं।
-      हमारी सेवाएँ अनुभवी महिलाओं द्वारा दी जाती हैं जो पारंपरिक और आधुनिक देखभाल दोनों का संतुलन जानती हैं।
-    </p>
-    <p>
-      चाहे वह नवजात शिशु की कोमल देखभाल हो या माँ के शरीर की थकान दूर करनी हो — हम हर जरूरत के लिए यहाँ हैं।
-    </p>
+    <p>हम "उमंग पेशेंट केयर सर्विसेज" हैं — Nagpur और Maharashtra में पेशेंट केयर, माँ और शिशु देखभाल की भरोसेमंद सेवा।</p>
+    <p>हमारा उद्देश्य है कि हर परिवार को घर पर ही दया, सुरक्षा और अनुभव से भरपूर सेवा मिले।</p>
+    <p>यह सेवा <strong>Reshma Tiwari</strong> द्वारा संचालित है, जो वर्षों से इस क्षेत्र में काम कर रही हैं।</p>
   </section>
 
   <section id="contact" class="contact">
     <h2>संपर्क करें</h2>
-    <p>📞 <strong>कॉल या WhatsApp करें:</strong> +91-9876543210</p>
-    <p>🕒 <strong>सेवा का समय:</strong> सुबह 9 बजे से रात 8 बजे तक</p>
-    <p>📍 <strong>सेवा क्षेत्र:</strong> दिल्ली NCR (दिल्ली, नोएडा, गाज़ियाबाद)</p>
+    <p><strong>Reshma Tiwari</strong></p>
+    <p>📞 कॉल: <a href="tel:+918180072771">8180072771</a></p>
+    <p>💬 WhatsApp: <a href="https://wa.me/918788517752" target="_blank">8788517752</a></p>
+    <p>📍 सेवा क्षेत्र: केवल Nagpur और सम्पूर्ण Maharashtra</p>
+    <p>🕒 सेवा समय: सुबह 9 बजे से रात 8 बजे तक</p>
   </section>
 
   <footer>
-    &copy; 2025 माँ और शिशु देखभाल सेवा | यह सेवा निःस्वार्थ भाव से चलाई जा रही है
+    © 2025 🌸 उमंग पेशेंट केयर सर्विसेज | समाज सेवा की दिशा में एक कदम
   </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918788517752" class="whatsapp-float" target="_blank" title="WhatsApp Chat">💬</a>
 
 </body>
 </html>
+
