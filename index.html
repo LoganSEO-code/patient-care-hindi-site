@@ -1,670 +1,670 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌸 उमंग पेशेंट केयर सर्विसेज</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> उमंग पेशेंट केयर सर्विसेज</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            overflow-x: hidden;
-        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow-x: hidden;
+        }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-        /* Logo styles */
-        .logo-container {
-            text-align: center;
-            padding: 2rem 0;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-        }
+        /* Logo styles */
+        .logo-container {
+            text-align: center;
+            padding: 2rem 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
 
-        .logo-image {
-            max-width: 200px;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            animation: logoFloat 3s ease-in-out infinite;
-        }
+        .logo-image {
+            max-width: 200px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            animation: logoFloat 3s ease-in-out infinite;
+        }
 
-        @keyframes logoFloat {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
+        @keyframes logoFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
 
-        /* Floating particles animation */
-        .particle {
-            position: absolute;
-            width: 6px;
-            height: 6px;
-            background: rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
-            animation: float 6s ease-in-out infinite;
-        }
+        /* Floating particles animation */
+        .particle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
-        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
 
-        /* Header */
-        header {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            animation: slideDown 0.8s ease-out;
-        }
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            animation: slideDown 0.8s ease-out;
+        }
 
-        @keyframes slideDown {
-            from {
-                transform: translateY(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
 
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 0;
-            flex-wrap: wrap;
-        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+            flex-wrap: wrap;
+        }
 
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #667eea;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-            animation: pulse 2s ease-in-out infinite;
-        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s ease-in-out infinite;
+        }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
 
-        .contact-info {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
+        .contact-info {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
 
-        .contact-btn {
-            padding: 0.5rem 1rem;
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-        }
+        .contact-btn {
+            padding: 0.5rem 1rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
 
-        .contact-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
-        }
+        .contact-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.5);
+        }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
-            color: white;
-            padding: 4rem 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9), rgba(118, 75, 162, 0.9));
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="white" opacity="0.1"><path d="M0,0 C150,100 350,0 500,50 C650,100 850,0 1000,50 L1000,100 L0,100 Z"></path></svg>');
-            animation: wave 4s ease-in-out infinite;
-        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="white" opacity="0.1"><path d="M0,0 C150,100 350,0 500,50 C650,100 850,0 1000,50 L1000,100 L0,100 Z"></path></svg>');
+            animation: wave 4s ease-in-out infinite;
+        }
 
-        @keyframes wave {
-            0%, 100% { transform: translateX(0); }
-            50% { transform: translateX(-50px); }
-        }
+        @keyframes wave {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(-50px); }
+        }
 
-        .hero-content {
-            position: relative;
-            z-index: 2;
-            animation: fadeInUp 1s ease-out;
-        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 1s ease-out;
+        }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-        /* Services Section */
-        .services {
-            padding: 4rem 0;
-            background: white;
-            position: relative;
-        }
+        /* Services Section */
+        .services {
+            padding: 4rem 0;
+            background: white;
+            position: relative;
+        }
 
-        .services::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 100px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-        }
+        .services::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
 
-        .section-title {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #333;
-            position: relative;
-            z-index: 2;
-            animation: fadeIn 0.8s ease-out;
-        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 0.8s ease-out;
+        }
 
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
 
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
 
-        .service-card {
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            transition: all 0.3s ease;
-            animation: slideInUp 0.8s ease-out;
-            animation-fill-mode: both;
-        }
+        .service-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            animation: slideInUp 0.8s ease-out;
+            animation-fill-mode: both;
+        }
 
-        .service-card:nth-child(1) { animation-delay: 0.1s; }
-        .service-card:nth-child(2) { animation-delay: 0.2s; }
-        .service-card:nth-child(3) { animation-delay: 0.3s; }
-        .service-card:nth-child(4) { animation-delay: 0.4s; }
+        .service-card:nth-child(1) { animation-delay: 0.1s; }
+        .service-card:nth-child(2) { animation-delay: 0.2s; }
+        .service-card:nth-child(3) { animation-delay: 0.3s; }
+        .service-card:nth-child(4) { animation-delay: 0.4s; }
 
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        }
 
-        .service-icon {
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 15px;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+        .service-icon {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-        .service-icon img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 15px;
-        }
+        .service-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
 
-        .service-icon::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-            animation: shimmer 3s infinite;
-        }
+        .service-icon::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 3s infinite;
+        }
 
-        @keyframes shimmer {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-        }
+        @keyframes shimmer {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+        }
 
-        .service-card h3 {
-            color: #333;
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-        }
+        .service-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
 
-        .service-card p {
-            color: #666;
-            line-height: 1.6;
-        }
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
 
-        /* About Section */
-        .about {
-            padding: 4rem 0;
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: white;
-            position: relative;
-        }
+        /* About Section */
+        .about {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            position: relative;
+        }
 
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: center;
-        }
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
 
-        .about-text {
-            animation: fadeInLeft 0.8s ease-out;
-        }
+        .about-text {
+            animation: fadeInLeft 0.8s ease-out;
+        }
 
-        @keyframes fadeInLeft {
-            from {
-                opacity: 0;
-                transform: translateX(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
-        .about-image {
-            width: 100%;
-            height: 300px;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: white;
-            position: relative;
-            overflow: hidden;
-            animation: fadeInRight 0.8s ease-out;
-        }
+        .about-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInRight 0.8s ease-out;
+        }
 
-        @keyframes fadeInRight {
-            from {
-                opacity: 0;
-                transform: translateX(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
 
-        /* Footer */
-        footer {
-            background: #333;
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-            position: relative;
-        }
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            position: relative;
+        }
 
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
 
-        .footer-section h3 {
-            margin-bottom: 1rem;
-            color: #667eea;
-        }
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #667eea;
+        }
 
-        .footer-section p, .footer-section a {
-            color: #ccc;
-            text-decoration: none;
-            margin-bottom: 0.5rem;
-            display: block;
-        }
+        .footer-section p, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
 
-        .footer-section a:hover {
-            color: #667eea;
-            transition: color 0.3s ease;
-        }
+        .footer-section a:hover {
+            color: #667eea;
+            transition: color 0.3s ease;
+        }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                gap: 1rem;
-            }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
 
-            .hero h1 {
-                font-size: 2rem;
-            }
+            .hero h1 {
+                font-size: 2rem;
+            }
 
-            .hero p {
-                font-size: 1rem;
-            }
+            .hero p {
+                font-size: 1rem;
+            }
 
-            .about-content {
-                grid-template-columns: 1fr;
-            }
+            .about-content {
+                grid-template-columns: 1fr;
+            }
 
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
 
-            .service-icon {
-                width: 100%;
-                height: 120px;
-            }
+            .service-icon {
+                width: 100%;
+                height: 120px;
+            }
 
-            .logo-image {
-                max-width: 150px;
-            }
-        }
+            .logo-image {
+                max-width: 150px;
+            }
+        }
 
-        /* Scroll animations */
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s ease-out;
-        }
+        /* Scroll animations */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
 
-        .animate-on-scroll.animated {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-        /* Loading animation */
-        .loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-            animation: fadeOut 0.5s ease-out 2s forwards;
-        }
+        /* Loading animation */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            animation: fadeOut 0.5s ease-out 2s forwards;
+        }
 
-        .loading-spinner {
-            width: 60px;
-            height: 60px;
-            border: 4px solid rgba(255, 255, 255, 0.3);
-            border-top: 4px solid white;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
 
-        @keyframes fadeOut {
-            to {
-                opacity: 0;
-                visibility: hidden;
-            }
-        }
-    </style>
+        @keyframes fadeOut {
+            to {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Loading Animation -->
-    <div class="loading">
-        <div class="loading-spinner"></div>
-    </div>
+    <!-- Loading Animation -->
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
 
-    <!-- Logo Section -->
-    <div class="logo-container">
-        <img src="https://i.postimg.cc/SXKH8PdK/logo.png" alt="उमंग पेशेंट केयर सर्विसेज लोगो" class="logo-image">
-    </div>
+    <!-- Logo Section -->
+    <div class="logo-container">
+        <img src="https://i.postimg.cc/SXKH8PdK/logo.png" alt="उमंग पेशेंट केयर सर्विसेज लोगो" class="logo-image">
+    </div>
 
-    <!-- Floating Particles -->
-    <div class="particle" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
-    <div class="particle" style="top: 20%; left: 80%; animation-delay: 1s;"></div>
-    <div class="particle" style="top: 60%; left: 20%; animation-delay: 2s;"></div>
-    <div class="particle" style="top: 80%; left: 90%; animation-delay: 3s;"></div>
-    <div class="particle" style="top: 30%; left: 60%; animation-delay: 4s;"></div>
+    <!-- Floating Particles -->
+    <div class="particle" style="top: 10%; left: 10%; animation-delay: 0s;"></div>
+    <div class="particle" style="top: 20%; left: 80%; animation-delay: 1s;"></div>
+    <div class="particle" style="top: 60%; left: 20%; animation-delay: 2s;"></div>
+    <div class="particle" style="top: 80%; left: 90%; animation-delay: 3s;"></div>
+    <div class="particle" style="top: 30%; left: 60%; animation-delay: 4s;"></div>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">🌸 उमंग पेशेंट केयर सर्विसेज</div>
-                <div class="contact-info">
-                    <a href="tel:+918180072771" class="contact-btn">📞 8180072771</a>
-                    <a href="https://wa.me/918788517752" class="contact-btn">💬 WhatsApp</a>
-                </div>
-            </div>
-        </div>
-    </header>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo"> उमंग पेशेंट केयर सर्विसेज</div>
+                <div class="contact-info">
+                    <a href="tel:+918180072771" class="contact-btn"> 8180072771</a>
+                    <a href="https://wa.me/918788517752" class="contact-btn"> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>घर पर देखभाल की विश्वसनीय सेवा</h1>
-                <p>हमारी विशेष सेवाओं में नवजात शिशुओं की पारंपरिक मालिश, माताओं की डिलीवरी के बाद की मालिश, बुजुर्गों की देखभाल और होम नर्सिंग शामिल हैं। चाहे वह शिशु की कोमल देखभाल हो या मां की थकान मिटाने वाली मालिश — हमारे अनुभवी स्टाफ हर कदम पर आपके साथ हैं।</p>
-            </div>
-        </div>
-    </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>घर पर देखभाल की विश्वसनीय सेवा</h1>
+                <p>हमारी विशेष सेवाओं में नवजात शिशुओं की पारंपरिक मालिश, माताओं की डिलीवरी के बाद की मालिश, बुजुर्गों की देखभाल और होम नर्सिंग शामिल हैं। चाहे वह शिशु की कोमल देखभाल हो या मां की थकान मिटाने वाली मालिश — हमारे अनुभवी स्टाफ हर कदम पर आपके साथ हैं।</p>
+            </div>
+        </div>
+    </section>
 
-    <!-- Services Section -->
-    <section class="services">
-        <div class="container">
-            <h2 class="section-title animate-on-scroll">हमारी सेवाएं</h2>
-            <div class="services-grid">
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">
-                        <img src="https://i.postimg.cc/5j7kVjNX/Baccha.jpg" alt="नवजात शिशु मालिश">
-                    </div>
-                    <h3>नवजात शिशु मालिश</h3>
-                    <p>पारंपरिक तकनीकों से नवजात शिशु की कोमल मालिश। बच्चे के स्वस्थ विकास के लिए।</p>
-                </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">
-                        <img src="https://i.postimg.cc/G46fYsqs/Old-2.jpg" alt="बुजुर्गों की देखभाल">
-                    </div>
-                    <h3>बुजुर्गों की देखभाल</h3>
-                    <p>अनुभवी कर्मचारी और व्यक्तिगत सेवा के साथ बुजुर्गों की संपूर्ण देखभाल।</p>
-                </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">
-                        <img src="https://i.postimg.cc/nX7dBkKm/elder-2.webp" alt="होम केयर नर्सिंग">
-                    </div>
-                    <h3>होम केयर नर्सिंग</h3>
-                    <p>घर पर पेशेवर नर्सिंग सेवा। मरीज़ की दवा, भोजन और दैनिक देखभाल।</p>
-                </div>
-                <div class="service-card animate-on-scroll">
-                    <div class="service-icon">
-                        <img src="https://i.postimg.cc/Z9SwcdjM/Elder-3.png" alt="24/7 सपोर्ट">
-                    </div>
-                    <h3>24/7 सपोर्ट</h3>
-                    <p>आपातकालीन स्थिति में 24 घंटे उपलब्ध सेवा। तुरंत संपर्क करें और तत्काल सहायता प्राप्त करें।</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">हमारी सेवाएं</h2>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <img src="https://i.postimg.cc/5j7kVjNX/Baccha.jpg" alt="नवजात शिशु मालिश">
+                    </div>
+                    <h3>नवजात शिशु मालिश</h3>
+                    <p>पारंपरिक तकनीकों से नवजात शिशु की कोमल मालिश। बच्चे के स्वस्थ विकास के लिए।</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <img src="https://i.postimg.cc/G46fYsqs/Old-2.jpg" alt="बुजुर्गों की देखभाल">
+                    </div>
+                    <h3>बुजुर्गों की देखभाल</h3>
+                    <p>अनुभवी कर्मचारी और व्यक्तिगत सेवा के साथ बुजुर्गों की संपूर्ण देखभाल।</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <img src="https://i.postimg.cc/nX7dBkKm/elder-2.webp" alt="होम केयर नर्सिंग">
+                    </div>
+                    <h3>होम केयर नर्सिंग</h3>
+                    <p>घर पर पेशेवर नर्सिंग सेवा। मरीज़ की दवा, भोजन और दैनिक देखभाल।</p>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <img src="https://i.postimg.cc/Z9SwcdjM/Elder-3.png" alt="24/7 सपोर्ट">
+                    </div>
+                    <h3>24/7 सपोर्ट</h3>
+                    <p>आपातकालीन स्थिति में 24 घंटे उपलब्ध सेवा। तुरंत संपर्क करें और तत्काल सहायता प्राप्त करें।</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2 class="animate-on-scroll">हमारी विशेषज्ञ टीम</h2>
-                    <p class="animate-on-scroll">हमारी अनुभवी और प्रशिक्षित टीम आपके परिवार की देखभाल के लिए समर्पित है। वर्षों का अनुभव और पारंपरिक तकनीकों का सही मिश्रण।</p>
-                    <p class="animate-on-scroll">हम केवल Nagpur और सम्पूर्ण Maharashtra में गुणवत्तापूर्ण सेवा प्रदान करते हैं। आपका भरोसा हमारी प्राथमिकता है।</p>
-                </div>
-                <div class="about-image animate-on-scroll">
-                    👩‍⚕️
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="animate-on-scroll">हमारी विशेषज्ञ टीम</h2>
+                    <p class="animate-on-scroll">हमारी अनुभवी और प्रशिक्षित टीम आपके परिवार की देखभाल के लिए समर्पित है। वर्षों का अनुभव और पारंपरिक तकनीकों का सही मिश्रण।</p>
+                    <p class="animate-on-scroll">हम केवल Nagpur और सम्पूर्ण Maharashtra में गुणवत्तापूर्ण सेवा प्रदान करते हैं। आपका भरोसा हमारी प्राथमिकता है।</p>
+                </div>
+                <div class="about-image animate-on-scroll">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>संपर्क जानकारी</h3>
-                    <p>📞 कॉल: 8180072771</p>
-                    <p>💬 WhatsApp: 8788517752</p>
-                    <p>🕒 हमारी सेवाएं 24/7 उपलब्ध हैं!</p>
-                </div>
-                <div class="footer-section">
-                    <h3>सेवा क्षेत्र</h3>
-                    <p>📍 केवल Nagpur और सम्पूर्ण Maharashtra</p>
-                    <p>हम विश्वसनीय और गुणवत्तापूर्ण सेवा प्रदान करते हैं</p>
-                </div>
-                <div class="footer-section">
-                    <h3>उमंग पेशेंट केयर सर्विसेज</h3>
-                    <p>आपके परिवार की देखभाल हमारी प्राथमिकता है</p>
-                    <p>© 2024 सभी अधिकार सुरक्षित</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>संपर्क जानकारी</h3>
+                    <p> कॉल: 8180072771</p>
+                    <p> WhatsApp: 8788517752</p>
+                    <p> हमारी सेवाएं 24/7 उपलब्ध हैं!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>सेवा क्षेत्र</h3>
+                    <p> केवल Nagpur और सम्पूर्ण Maharashtra</p>
+                    <p>हम विश्वसनीय और गुणवत्तापूर्ण सेवा प्रदान करते हैं</p>
+                </div>
+                <div class="footer-section">
+                    <h3>उमंग पेशेंट केयर सर्विसेज</h3>
+                    <p>आपके परिवार की देखभाल हमारी प्राथमिकता है</p>
+                    <p>© 2024 सभी अधिकार सुरक्षित</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-    <script>
-        // Smooth scrolling animation
-        function animateOnScroll() {
-            const elements = document.querySelectorAll('.animate-on-scroll');
-            elements.forEach(element => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                
-                if (elementTop < windowHeight - 100) {
-                    element.classList.add('animated');
-                }
-            });
-        }
+    <script>
+        // Smooth scrolling animation
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('animated');
+                }
+            });
+        }
 
-        // Add scroll event listener
-        window.addEventListener('scroll', animateOnScroll);
+        // Add scroll event listener
+        window.addEventListener('scroll', animateOnScroll);
 
-        function createParticles() {
-            for (let i = 0; i < 20; i++) {
-                const particle = document.createElement('div');
-                particle.className = 'particle';
-                particle.style.top = Math.random() * 100 + '%';
-                particle.style.left = Math.random() * 100 + '%';
-                particle.style.animationDelay = Math.random() * 6 + 's';
-                particle.style.animationDuration = (Math.random() * 3 + 4) + 's';
-                document.body.appendChild(particle);
-            }
-        }
+        function createParticles() {
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 4) + 's';
+                document.body.appendChild(particle);
+            }
+        }
 
-        // Initialize animations
-        document.addEventListener('DOMContentLoaded', function() {
-            createParticles();
-            animateOnScroll();
-            
-            // Add smooth scrolling to links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            createParticles();
+            animateOnScroll();
+            
+            // Add smooth scrolling to links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
 
-        // Add hover effects to service cards
-        document.querySelectorAll('.service-card').forEach(card => {
-            card.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-10px) scale(1.02)';
-            });
-            
-            card.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0) scale(1)';
-            });
-        });
+        // Add hover effects to service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
 
-        // Add click animation to contact buttons
-        document.querySelectorAll('.contact-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                this.style.transform = 'scale(0.95)';
-                setTimeout(() => {
-                    this.style.transform = 'scale(1)';
-                }, 150);
-            });
-        });
-    </script>
+        // Add click animation to contact buttons
+        document.querySelectorAll('.contact-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+    </script>
 </body>
 </html>
